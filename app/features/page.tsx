@@ -42,12 +42,31 @@ export default function FeaturesPage() {
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
-              <tr className="bg-gray-50">
+              <tr className="bg-gray-200">
                 <th className="px-6 py-4 text-left font-semibold text-gray-900 border-b-2">Feature</th>
-                <th className="px-6 py-4 text-center font-semibold text-gray-900 border-b-2">Free</th>
-                <th className="px-6 py-4 text-center font-semibold text-gray-900 border-b-2">Starter</th>
-                <th className="px-6 py-4 text-center font-semibold text-green-600 border-b-2">Professional</th>
-                <th className="px-6 py-4 text-center font-semibold text-gray-900 border-b-2">Business</th>
+                <th className="px-6 py-4 text-center border-b-2">
+                  <div className="font-semibold text-gray-900">Free</div>
+                  <div className="text-2xl font-bold text-gray-900 mt-1">$0</div>
+                  <div className="text-sm text-gray-500">/month</div>
+                </th>
+                <th className="px-6 py-4 text-center border-b-2">
+                  <div className="font-semibold text-gray-900">Starter</div>
+                  <div className="text-2xl font-bold text-gray-900 mt-1">$49</div>
+                  <div className="text-sm text-gray-500">/month</div>
+                </th>
+                <th className="px-6 py-4 text-center border-b-2">
+                  <div className="font-semibold text-green-600">Professional</div>
+                  <div className="text-2xl font-bold text-green-600 mt-1">$149</div>
+                  <div className="text-sm text-gray-500">/month</div>
+                  <div className="mt-1">
+                    <span className="bg-green-600 text-gray-50 px-2 py-1 rounded text-xs font-semibold">POPULAR</span>
+                  </div>
+                </th>
+                <th className="px-6 py-4 text-center border-b-2">
+                  <div className="font-semibold text-gray-900">Business</div>
+                  <div className="text-2xl font-bold text-gray-900 mt-1">$299</div>
+                  <div className="text-sm text-gray-500">/month</div>
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y">
@@ -155,9 +174,12 @@ export default function FeaturesPage() {
           </table>
         </div>
 
-        <div className="text-center mt-12">
-          <a href="/#pricing" className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition">
-            View Full Pricing
+        <div className="flex justify-center gap-4 mt-12">
+          <a href="/#pricing" className="inline-block bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+            View Pricing
+          </a>
+          <a href="https://priceapi-mvp.onrender.com/docs" className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+            Start Free
           </a>
         </div>
       </section>

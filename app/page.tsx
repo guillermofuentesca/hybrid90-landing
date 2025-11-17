@@ -11,7 +11,7 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>
               <a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
-              <a href="https://khanda.mintlify.app" className="text-gray-600 hover:text-gray-900">Docs</a>
+              <a href="https://khanda.mintlify.app" target="_blank" rel="noopener" className="text-gray-600 hover:text-gray-900">Docs</a>
               <a href="https://priceapi-mvp.onrender.com/docs" className="bg-primary-500 text-white px-4 py-2 rounded-lg hover:bg-primary-600 transition">Get Started</a>
             </div>
           </div>
@@ -32,7 +32,7 @@ export default function Home() {
             <a href="https://priceapi-mvp.onrender.com/docs" className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition shadow-lg">
                 Start Free
             </a>
-            <a href="https://khanda.mintlify.app/quickstart" className="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition border-2 border-gray-200">
+            <a href="https://khanda.mintlify.app" target="_blank" rel="noopener" className="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition border-2 border-gray-200">
               View Docs
             </a>
           </div>
@@ -284,10 +284,18 @@ console.log(data.price);`}
                 Contact Sales
               </a>
             </div>
-
+            <div className="text-center mt-12">
+            
+                <a href="/features"
+                className="inline-block bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition"
+                >
+                Compare All Features →
+            </a>
+            </div>
           </div>
         </div>
       </section>
+      
 
          {/* Final CTA */}
       <section className="bg-green-600 py-16">
